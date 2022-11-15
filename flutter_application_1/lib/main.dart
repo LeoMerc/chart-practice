@@ -1,6 +1,7 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/widgets/bar_graph.dart';
+import 'package:flutter_application_1/widgets/colors_legend.dart';
 import 'package:flutter_application_1/widgets/last_week_pie_chart.dart';
 import 'package:flutter_application_1/widgets/last_week_table.dart';
 import 'package:flutter_application_1/widgets/percentages.dart';
@@ -15,18 +16,17 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material App',
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Material App Bar'),
-        ),
+     
         body: ListView(
-          children: [
-            TableChart(),
-            PieCharts(),
-            barGraph(),
+          children:  [
+            const TableChart(),
+           const ColorsLegend(),
+            const PieCharts(),
+            const barGraph(),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
+              children: const [
                 LastWeekTable(),
                 SizedBox(
                   width: 100,
@@ -34,11 +34,11 @@ class MyApp extends StatelessWidget {
                 LastWeekPieChart(),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 100,
             ),
-            Percentages(),
-            SizedBox(
+            const Percentages(),
+            const SizedBox(
               height: 100,
             ),
           ],

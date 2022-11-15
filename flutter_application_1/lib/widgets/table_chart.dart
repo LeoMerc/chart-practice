@@ -5,10 +5,11 @@ class TableChart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 600.0, vertical: 20),
+    return Container(
+      margin: EdgeInsets.symmetric(horizontal: 1000, vertical: 20),
+      width: 200,
       child: Table(
-        defaultColumnWidth: FixedColumnWidth(120.0),
+        defaultColumnWidth: FixedColumnWidth(50.0),
         border: TableBorder.all(
             color: Colors.grey, style: BorderStyle.solid, width: 2),
         children: [

@@ -45,7 +45,7 @@ class barGraph extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 18.0),
       child: Container(
         height: 400,
-        width: double.infinity / 1,
+        width: double.infinity / 2,
         child: BarChart(
           BarChartData(
               titlesData: FlTitlesData(
