@@ -1,6 +1,7 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/widgets/bar_graph.dart';
+import 'package:flutter_application_1/widgets/colors_legend.dart';
 import 'package:flutter_application_1/widgets/pie_chart.dart';
 import 'package:flutter_application_1/widgets/table_chart.dart';
 
@@ -12,12 +13,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material App',
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Material App Bar'),
-        ),
+     
         body: ListView(
-          children: [
+          children: const [
             TableChart(),
+           ColorsLegend(),
             PieCharts(),
             barGraph(),
           ],
