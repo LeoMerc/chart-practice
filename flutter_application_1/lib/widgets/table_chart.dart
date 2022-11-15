@@ -5,34 +5,24 @@ class TableChart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 600.0, vertical: 20),
-      child: Table(
-        defaultColumnWidth: FixedColumnWidth(120.0),
-        border: TableBorder.all(
-            color: Colors.grey, style: BorderStyle.solid, width: 2),
-        children: [
-          TableRow(
-              decoration: BoxDecoration(color: Colors.lightBlueAccent),
-              children: [
-                Column(
-                  children: const [
-                    Text(
-                      'Engage Option',
-                      style: TextStyle(
-                          color: Colors.white, fontWeight: FontWeight.bold),
-                    ),
-                  ],
-                ),
-                Column(
-                  children: const [
-                    Text(
-                      'Engage Option',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
+    return Container(
+      child: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 50.0, vertical: 20),
+        child: Table(
+          defaultColumnWidth: FixedColumnWidth(120.0),
+          border: TableBorder.all(
+              color: Colors.grey, style: BorderStyle.solid, width: 2),
+          children: [
+            TableRow(
+                decoration: BoxDecoration(color: Colors.lightBlueAccent),
+                children: [
+                  Column(
+                    children: const [
+                      Text(
+                        'Engage Option',
+                        style: TextStyle(
+                            color: Colors.white, fontWeight: FontWeight.bold),
                       ),
-                    )
                     ],
                   ),
                   Column(
@@ -242,7 +232,7 @@ class TableChart extends StatelessWidget {
                 ]),
           ],
         ),
-      );
-    
+      ),
+    );
   }
 }
