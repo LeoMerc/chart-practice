@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
-class TableChart extends StatelessWidget {
-  const TableChart({super.key});
+class LastWeekTable extends StatelessWidget {
+  const LastWeekTable({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 600.0, vertical: 20),
+    return Container(
+      width: 300,
       child: Table(
+        
         defaultColumnWidth: FixedColumnWidth(120.0),
         border: TableBorder.all(
             color: Colors.grey, style: BorderStyle.solid, width: 2),
@@ -44,91 +45,19 @@ class TableChart extends StatelessWidget {
           TableRow(children: [
             Column(
               children: const [
-                Text('Neighbor'),
-              ],
-            ),
-            Column(
-              children: const [
-                Text('418'),
-              ],
-            ),
-          ]),
-          TableRow(children: [
-            Column(
-              children: const [
                 Text('Google Search'),
               ],
             ),
             Column(
               children: const [
-                Text('228'),
+                Text('24'),
               ],
             ),
           ]),
           TableRow(children: [
             Column(
               children: const [
-                Text('Neighbor/Friend'),
-              ],
-            ),
-            Column(
-              children: const [
-                Text('117'),
-              ],
-            ),
-          ]),
-          TableRow(children: [
-            Column(
-              children: const [
-                Text('Website'),
-              ],
-            ),
-            Column(
-              children: const [
-                Text('67'),
-              ],
-            ),
-          ]),
-          TableRow(children: [
-            Column(
-              children: const [
-                Text('Facebook'),
-              ],
-            ),
-            Column(
-              children: const [
-                Text('39'),
-              ],
-            ),
-          ]),
-          TableRow(children: [
-            Column(
-              children: const [
-                Text('Yard Sign'),
-              ],
-            ),
-            Column(
-              children: const [
-                Text('35'),
-              ],
-            ),
-          ]),
-          TableRow(children: [
-            Column(
-              children: const [
-                Text('Drive By'),
-              ],
-            ),
-            Column(
-              children: const [
-                Text('33'),
-              ],
-            ),
-          ]),
-          TableRow(children: [
-            Column(
-              children: const [
-                Text('Email'),
+                Text('Neighbor/friend'),
               ],
             ),
             Column(
@@ -140,43 +69,7 @@ class TableChart extends StatelessWidget {
           TableRow(children: [
             Column(
               children: const [
-                Text('Billboard'),
-              ],
-            ),
-            Column(
-              children: const [
-                Text('7'),
-              ],
-            ),
-          ]),
-          TableRow(children: [
-            Column(
-              children: const [
-                Text('Twitter'),
-              ],
-            ),
-            Column(
-              children: const [
-                Text('3'),
-              ],
-            ),
-          ]),
-          TableRow(children: [
-            Column(
-              children: const [
-                Text('Post Card'),
-              ],
-            ),
-            Column(
-              children: const [
-                Text('3'),
-              ],
-            ),
-          ]),
-          TableRow(children: [
-            Column(
-              children: const [
-                Text('Instagram'),
+                Text('Website'),
               ],
             ),
             Column(
@@ -188,19 +81,7 @@ class TableChart extends StatelessWidget {
           TableRow(children: [
             Column(
               children: const [
-                Text('Church Offer'),
-              ],
-            ),
-            Column(
-              children: const [
-                Text('2'),
-              ],
-            ),
-          ]),
-          TableRow(children: [
-            Column(
-              children: const [
-                Text('Youtube'),
+                Text('Facebook'),
               ],
             ),
             Column(
@@ -209,6 +90,31 @@ class TableChart extends StatelessWidget {
               ],
             ),
           ]),
+          TableRow(children: [
+            Column(
+              children: const [
+                Text('Drive By'),
+              ],
+            ),
+            Column(
+              children: const [
+                Text('1'),
+              ],
+            ),
+          ]),
+          TableRow(children: [
+            Column(
+              children: const [
+                Text('Yard Sign'),
+              ],
+            ),
+            Column(
+              children: const [
+                Text('1'),
+              ],
+            ),
+          ]),
+         
           TableRow(
               decoration: BoxDecoration(color: Colors.grey[200]),
               children: [
@@ -223,7 +129,7 @@ class TableChart extends StatelessWidget {
                 Column(
                   children: const [
                     Text(
-                      '963',
+                      '39',
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                   ],
