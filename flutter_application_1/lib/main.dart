@@ -5,6 +5,7 @@ import 'package:flutter_application_1/widgets/colors_legend.dart';
 import 'package:flutter_application_1/widgets/last_week_pie_chart.dart';
 import 'package:flutter_application_1/widgets/last_week_table.dart';
 import 'package:flutter_application_1/widgets/percentages.dart';
+import 'package:flutter_application_1/widgets/percentages_colors_legend.dart';
 import 'package:flutter_application_1/widgets/pie_chart.dart';
 import 'package:flutter_application_1/widgets/table_chart.dart';
 
@@ -37,6 +38,7 @@ class MyApp extends StatelessWidget {
             const SizedBox(
               height: 100,
             ),
+            const PercentegesColorsLegend(),
             const Percentages(),
             const SizedBox(
               height: 100,

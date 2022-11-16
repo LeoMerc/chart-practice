@@ -6,7 +6,7 @@ class TableChart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 1000, vertical: 20),
+      margin: EdgeInsets.symmetric(horizontal: 600, vertical: 20),
       width: 200,
       child: Table(
         defaultColumnWidth: FixedColumnWidth(50.0),

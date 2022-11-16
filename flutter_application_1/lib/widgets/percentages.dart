@@ -4,15 +4,19 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
 
 class Percentages extends StatelessWidget {
+  
   const Percentages({super.key});
 
   @override
+  
   Widget build(BuildContext context) {
+    
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         Column(
           children: [
+            
             Container(
               height: 50,
               width: 40,
@@ -34,7 +38,7 @@ class Percentages extends StatelessWidget {
                       title: '80%', color: Colors.lightBlueAccent, value: 80),
                   PieChartSectionData(
                       title: '20%',
-                      color: Color.fromARGB(255, 14, 222, 202),
+                      color: Colors.purpleAccent,
                       value: 20),
                 ]),
                 swapAnimationDuration: Duration(milliseconds: 150), // Optional
@@ -92,11 +96,11 @@ class Percentages extends StatelessWidget {
               child: PieChart(
                 PieChartData(centerSpaceRadius: double.infinity, sections: [
                   PieChartSectionData(
-                      title: '46%', color: Colors.lightBlueAccent, value: 46),
+                      title: '15%', color: Colors.lightBlueAccent, value: 15),
                   PieChartSectionData(
-                      title: '15%',
+                      title: '46%',
                       color: Color.fromARGB(255, 14, 222, 202),
-                      value: 15),
+                      value: 46),
                   PieChartSectionData(
                       title: '15%', color: Colors.lightGreenAccent, value: 15),
                   PieChartSectionData(
@@ -115,4 +119,5 @@ class Percentages extends StatelessWidget {
       ],
     );
   }
+    
 }

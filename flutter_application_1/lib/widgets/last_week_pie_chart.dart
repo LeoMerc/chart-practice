@@ -13,14 +13,13 @@ class LastWeekPieChart extends StatelessWidget {
       width: 300,
       child: PieChart(
         PieChartData(centerSpaceRadius: double.infinity, sections: [
+         
           PieChartSectionData(
-              title: '62%', color: Colors.lightBlueAccent, value: 62),
-          PieChartSectionData(
-              title: '21%',
+              title: '62%',
               color: Color.fromARGB(255, 14, 222, 202),
-              value: 21),
+              value: 62),
           PieChartSectionData(
-              title: '5%', color: Colors.lightGreenAccent, value: 5),
+              title: '21%', color: Colors.lightGreenAccent, value: 21),
           PieChartSectionData(
               title: '5%', color: Colors.yellow, value: 5),
           PieChartSectionData(
