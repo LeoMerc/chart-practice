@@ -6,24 +6,214 @@ class CustomerServiceBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    late List<BarChartGroupData> rawBarGroups;
+    late List<BarChartGroupData> rawBarGroups = [
 
-    final barGroup1 = makeGroupData(0, 418, Color.fromARGB(255, 65, 189, 247));
-    final barGroup2 = makeGroupData(1, 228, Color.fromARGB(255, 14, 222, 202));
-    final barGroup3 = makeGroupData(2, 117, Colors.lightGreenAccent);
-    final barGroup4 = makeGroupData(3, 67, Colors.yellow);
-    final barGroup5 = makeGroupData(4, 39, Colors.deepOrange);
+    BarChartGroupData(
+      x: 0,
+      barsSpace: 4,
+      barRods: [
+        BarChartRodData(
+          toY: 17000000000,
+          rodStackItems: [
+            BarChartRodStackItem(0, 2000000000, Colors.blueAccent),
+            BarChartRodStackItem(2000000000, 12000000000, Colors.redAccent),
+            BarChartRodStackItem(12000000000, 17000000000, Colors.greenAccent),
+          ],
+          borderRadius: BorderRadius.zero,
+        ),
+        BarChartRodData(
+          toY: 24000000000,
+          rodStackItems: [
+            BarChartRodStackItem(0, 13000000000, Colors.blueAccent),
+            BarChartRodStackItem(13000000000, 14000000000, Colors.redAccent),
+            BarChartRodStackItem(14000000000, 24000000000, Colors.greenAccent),
+          ],
+          borderRadius: BorderRadius.zero,
+        ),
+        BarChartRodData(
+          toY: 23000000000.5,
+          rodStackItems: [
+            BarChartRodStackItem(0, 6000000000.5, Colors.blueAccent),
+            BarChartRodStackItem(6000000000.5, 18000000000, Colors.redAccent),
+            BarChartRodStackItem(18000000000, 23000000000.5, Colors.greenAccent),
+          ],
+          borderRadius: BorderRadius.zero,
+        ),
+        BarChartRodData(
+          toY: 29000000000,
+          rodStackItems: [
+            BarChartRodStackItem(0, 9000000000, Colors.blueAccent),
+            BarChartRodStackItem(9000000000, 15000000000, Colors.redAccent),
+            BarChartRodStackItem(15000000000, 29000000000, Colors.greenAccent),
+          ],
+          borderRadius: BorderRadius.zero,
+        ),
+        BarChartRodData(
+          toY: 32000000000,
+          rodStackItems: [
+            BarChartRodStackItem(0, 2000000000.5, Colors.blueAccent),
+            BarChartRodStackItem(2000000000.5, 17000000000.5, Colors.redAccent),
+            BarChartRodStackItem(17000000000.5, 32000000000, Colors.greenAccent),
+          ],
+          borderRadius: BorderRadius.zero,
+        ),
+      ],
+    ),
+    BarChartGroupData(
+      x: 1,
+      barsSpace: 4,
+      barRods: [
+        BarChartRodData(
+          toY: 31000000000,
+          rodStackItems: [
+            BarChartRodStackItem(0, 11000000000, Colors.blueAccent),
+            BarChartRodStackItem(11000000000, 18000000000, Colors.redAccent),
+            BarChartRodStackItem(18000000000, 31000000000, Colors.greenAccent),
+          ],
+          borderRadius: BorderRadius.zero,
+        ),
+        BarChartRodData(
+          toY: 35000000000,
+          rodStackItems: [
+            BarChartRodStackItem(0, 14000000000, Colors.blueAccent),
+            BarChartRodStackItem(14000000000, 27000000000, Colors.redAccent),
+            BarChartRodStackItem(27000000000, 35000000000, Colors.greenAccent),
+          ],
+          borderRadius: BorderRadius.zero,
+        ),
+        BarChartRodData(
+          toY: 31000000000,
+          rodStackItems: [
+            BarChartRodStackItem(0, 8000000000, Colors.blueAccent),
+            BarChartRodStackItem(8000000000, 24000000000, Colors.redAccent),
+            BarChartRodStackItem(24000000000, 31000000000, Colors.greenAccent),
+          ],
+          borderRadius: BorderRadius.zero,
+        ),
+        BarChartRodData(
+          toY: 15000000000,
+          rodStackItems: [
+            BarChartRodStackItem(0, 6000000000.5, Colors.blueAccent),
+            BarChartRodStackItem(6000000000.5, 12000000000.5, Colors.redAccent),
+            BarChartRodStackItem(12000000000.5, 15000000000, Colors.greenAccent),
+          ],
+          borderRadius: BorderRadius.zero,
+        ),
+        BarChartRodData(
+          toY: 17000000000,
+          rodStackItems: [
+            BarChartRodStackItem(0, 9000000000, Colors.blueAccent),
+            BarChartRodStackItem(9000000000, 15000000000, Colors.redAccent),
+            BarChartRodStackItem(15000000000, 17000000000, Colors.greenAccent),
+          ],
+          borderRadius: BorderRadius.zero,
+        ),
+      ],
+    ),
+    BarChartGroupData(
+      x: 2,
+      barsSpace: 4,
+      barRods: [
+        BarChartRodData(
+          toY: 34000000000,
+          rodStackItems: [
+            BarChartRodStackItem(0, 6000000000, Colors.blueAccent),
+            BarChartRodStackItem(6000000000, 23000000000, Colors.redAccent),
+            BarChartRodStackItem(23000000000, 34000000000, Colors.greenAccent),
+          ],
+          borderRadius: BorderRadius.zero,
+        ),
+        BarChartRodData(
+          toY: 32000000000,
+          rodStackItems: [
+            BarChartRodStackItem(0, 7000000000, Colors.blueAccent),
+            BarChartRodStackItem(7000000000, 24000000000, Colors.redAccent),
+            BarChartRodStackItem(24000000000, 32000000000, Colors.greenAccent),
+          ],
+          borderRadius: BorderRadius.zero,
+        ),
+        BarChartRodData(
+          toY: 14000000000.5,
+          rodStackItems: [
+            BarChartRodStackItem(0, 1000000000.5, Colors.blueAccent),
+            BarChartRodStackItem(1000000000.5, 12000000000, Colors.redAccent),
+            BarChartRodStackItem(12000000000, 14000000000.5, Colors.greenAccent),
+          ],
+          borderRadius: BorderRadius.zero,
+        ),
+        BarChartRodData(
+          toY: 20000000000,
+          rodStackItems: [
+            BarChartRodStackItem(0, 4000000000, Colors.blueAccent),
+            BarChartRodStackItem(4000000000, 15000000000, Colors.redAccent),
+            BarChartRodStackItem(15000000000, 20000000000, Colors.greenAccent),
+          ],
+          borderRadius: BorderRadius.zero,
+        ),
+        BarChartRodData(
+          toY: 24000000000,
+          rodStackItems: [
+            BarChartRodStackItem(0, 4000000000, Colors.blueAccent),
+            BarChartRodStackItem(4000000000, 15000000000, Colors.redAccent),
+            BarChartRodStackItem(15000000000, 24000000000, Colors.greenAccent),
+          ],
+          borderRadius: BorderRadius.zero,
+        ),
+      ],
+    ),
+    BarChartGroupData(
+      x: 3,
+      barsSpace: 4,
+      barRods: [
+        BarChartRodData(
+          toY: 14000000000,
+          rodStackItems: [
+            BarChartRodStackItem(0, 1000000000.5, Colors.blueAccent),
+            BarChartRodStackItem(1000000000.5, 12000000000, Colors.redAccent),
+            BarChartRodStackItem(12000000000, 14000000000, Colors.greenAccent),
+          ],
+          borderRadius: BorderRadius.zero,
+        ),
+        BarChartRodData(
+          toY: 27000000000,
+          rodStackItems: [
+            BarChartRodStackItem(0, 7000000000, Colors.blueAccent),
+            BarChartRodStackItem(7000000000, 25000000000, Colors.redAccent),
+            BarChartRodStackItem(25000000000, 27000000000, Colors.greenAccent),
+          ],
+          borderRadius: BorderRadius.zero,
+        ),
+        BarChartRodData(
+          toY: 29000000000,
+          rodStackItems: [
+            BarChartRodStackItem(0, 6000000000, Colors.blueAccent),
+            BarChartRodStackItem(6000000000, 23000000000, Colors.redAccent),
+            BarChartRodStackItem(23000000000, 29000000000, Colors.greenAccent),
+          ],
+          borderRadius: BorderRadius.zero,
+        ),
+        BarChartRodData(
+          toY: 16000000000.5,
+          rodStackItems: [
+            BarChartRodStackItem(0, 9000000000, Colors.blueAccent),
+            BarChartRodStackItem(9000000000, 15000000000, Colors.redAccent),
+            BarChartRodStackItem(15000000000, 16000000000.5, Colors.greenAccent),
+          ],
+          borderRadius: BorderRadius.zero,
+        ),
+        BarChartRodData(
+          toY: 15000000000,
+          rodStackItems: [
+            BarChartRodStackItem(0, 7000000000, Colors.blueAccent),
+            BarChartRodStackItem(7000000000, 12000000000.5, Colors.redAccent),
+            BarChartRodStackItem(12000000000.5, 15000000000, Colors.greenAccent),
+          ],
+          borderRadius: BorderRadius.zero,
+        ),
+      ],
+    ),
 
-    final items = [
-      barGroup1,
-      barGroup2,
-      barGroup3,
-      barGroup4,
-      barGroup5,
-   
     ];
-
-    rawBarGroups = items;
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 18.0),
       child: Container(
@@ -31,18 +221,18 @@ class CustomerServiceBar extends StatelessWidget {
         width: double.infinity / 2,
         child: BarChart(
           BarChartData(
-              titlesData: FlTitlesData(
-                show: true,
-                bottomTitles: AxisTitles(
-                  sideTitles: SideTitles(
-                    showTitles: true,
-                    getTitlesWidget: bottomTitles,
-                    reservedSize: 42,
-                  ),
+            titlesData: FlTitlesData(
+              show: true,
+              bottomTitles: AxisTitles(
+                sideTitles: SideTitles(
+                  showTitles: true,
+                  getTitlesWidget: bottomTitles,
+                  reservedSize: 42,
                 ),
               ),
-              barGroups: rawBarGroups,
-              ),
+            ),
+            barGroups: rawBarGroups,
+          ),
           swapAnimationDuration: const Duration(milliseconds: 150), // Optional
           swapAnimationCurve: Curves.linear, // Optional
         ),
@@ -57,7 +247,6 @@ class CustomerServiceBar extends StatelessWidget {
       'ruby.cagle',
       'shirley.seaholm',
       'steve.stanley',
-      
     ];
 
     final Widget text = Text(
